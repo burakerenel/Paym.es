@@ -2,7 +2,7 @@
 description: Paymes API
 ---
 
-# 1 - Başlangıç
+# Paymes API Servisi
 
 Paymes Ödeme API servisi internet üzerinden ödeme kabul eden tüm üye işyerlerine özel geliştirilmiştir.
 
