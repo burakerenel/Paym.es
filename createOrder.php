@@ -1,5 +1,6 @@
 <?php
 
+
     $url = 'https://api.paym.es/order_create';
     $data_array = array(
     	'secret'=>'{SecretKey}', // teknik@paym.es tarafından ulaştırılan secret keyiniz.
