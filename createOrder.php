@@ -5,7 +5,7 @@
     $data_array = array(
     	'secret'=>'{SecretKey}', // teknik@paym.es tarafından ulaştırılan secret keyiniz.
     	'orderId'=>'100',	// Kendi sisteminizdeki ödeme işlem numarasıdır.
-    	'price'=>10.00,
+    	'price'=>'10.00',
     	'currency'=>'TRY',
     	'productName'=>'Mavi Kalem',
         'buyerName'=>'Burak Erenel',
@@ -18,9 +18,6 @@
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
     curl_setopt($ch, CURLOPT_POST, 1);
     curl_setopt($ch, CURLOPT_POSTFIELDS, $veri);
-    curl_setopt($ch, CURLOPT_HTTPHEADER, array('Content-Type:application/json'));
-    curl_setopt($ch, CURLOPT_SSLVERSION, 6);
-    curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, 0);
     $curl_exec = curl_exec ($ch);
     curl_close ($ch);
     $result = json_decode($curl_exec);
