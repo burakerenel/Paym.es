@@ -1,7 +1,7 @@
 <?php
-$url = 'https://api.paym.es/order_cancel/d17af787-a663-41ba-bf55-69915a243b1e';
+$url = 'https://api.paym.es/order_cancel/{paymesOrderId}';
 $data_array = array(
-    'secret'=>'12345', // teknik@paym.es tarafından ulaştırılan secret keyiniz.
+    'secret'=>{SecretKey}, // teknik@paym.es tarafından ulaştırılan secret keyiniz.
 );
 $ch = curl_init($url);
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
